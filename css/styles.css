@@ -6,12 +6,21 @@
   --color-blue: #404bbf;
   --color-grey: #8e8f99;
   --white-grey: #f4f4fd;
+  --transform-all: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+@keyframes {
+  0% {
+    transform: rotate (0);
+  }
+  100% {
+    transform: rotate (0);
+  }
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -105,7 +114,22 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--color-menu);
+  transition: color var(--transform-all);
+  position: relative;
 }
+.menu-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: var(--color-blue);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 44px;
+  border-radius: 2px;
+}
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--color-blue);
@@ -123,6 +147,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-nav-links);
+  transition: color var(--transform-all);
 }
 .contacts:hover,
 .contacts:focus {
@@ -177,6 +202,7 @@ img {
   padding-left: 32px;
   padding-right: 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transform-all);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -318,6 +344,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transform-all);
 }
 .emploee-soc-link:hover,
 .emploee-soc-link:focus {
@@ -350,6 +377,7 @@ img {
   height: 56px;
 
   fill: currentColor;
+  transition: fill var(--transform-all);
 }
 .icons-customers {
   display: flex;
@@ -377,6 +405,8 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
+  transition: border var(--transform-all), color var(--transform-all),
+    outline var(--transform-all);
 }
 
 /*=====================SECTION HERO SECOND PAGE=========================*/
@@ -393,6 +423,8 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   cursor: pointer;
+  transition: color var(--transform-all), background-color var(--transform-all),
+    border-color var(--transform-all), box-shadow var(--transform-all);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -418,6 +450,7 @@ img {
 }
 .links-img-works {
   display: block;
+  transition: box-shadow var(--transform-all);
 }
 .links-img-works:hover,
 .links-img-works:focus {
@@ -534,6 +567,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transform-all);
 }
 .soc-link-footer:hover,
 .soc-link-footer:focus {
