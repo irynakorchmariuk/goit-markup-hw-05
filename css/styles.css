@@ -478,11 +478,11 @@ img {
   overflow: hidden;
 }
 .pictures-of-works:hover .text-modal {
-  transform: translateY(0);
+  transform: translateY(0%);
   transition: transform 300ms linear;
 }
 .pictures-of-works:focus .text-modal {
-  transform: translateY(0);
+  transform: translateY(0%);
   transition: transform 300ms linear;
 }
 .text-modal {
