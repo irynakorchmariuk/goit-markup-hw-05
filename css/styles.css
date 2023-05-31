@@ -56,7 +56,7 @@ img {
 /*===========================HEADER FIRST AND SEKOND PAGE============================*/
 .page-header {
   padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  /* padding-bottom: 25.5px; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -84,6 +84,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--font-color);
+  padding-bottom: 25.5px;
+  display: block;
 }
 .logo-header {
   margin-right: 76px;
@@ -108,8 +110,26 @@ img {
   color: var(--color-menu);
   transition: color var(--transform-all);
   position: relative;
+  padding-bottom: 25.5px;
+  display: block;
 }
-.menu-link::after {
+.current-page-studio::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: var(--color-blue);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 44px;
+  border-radius: 2px;
+}
+.menu-link.link.current-page-studio {
+}
+.menu-link.link.current-page-portfolio {
+}
+.current-page-portfolio::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -140,6 +160,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-nav-links);
   transition: color var(--transform-all);
+  padding-bottom: 25.5px;
+  display: block;
 }
 .contacts:hover,
 .contacts:focus {
@@ -607,4 +629,38 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.btn-cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 360px;
+  margin-right: 24px;
+  margin-top: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.picture-cross {
+  width: 8px;
+  height: 8px;
+  fill: #2e2f42;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.btn-cross:hover,
+.btn-cross:focus {
+  background-color: #404bbf;
+}
+.btn-cross:hover .picture-cross {
+  fill: #ffffff;
+}
+.btn-cross:focus .picture-cross {
+  fill: #ffffff;
 }
