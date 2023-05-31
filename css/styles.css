@@ -647,7 +647,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.picture-cross {
+.cross {
   width: 8px;
   height: 8px;
   fill: #2e2f42;
@@ -666,9 +666,9 @@ img {
   background-color: #404bbf;
   border: none;
 }
-.btn-cross:hover .picture-cross {
+.btn-cross:hover .cross {
   fill: #ffffff;
 }
-.btn-cross:focus .picture-cross {
+.btn-cross:focus .cross {
   fill: #ffffff;
 }
