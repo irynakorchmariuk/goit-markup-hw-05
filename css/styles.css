@@ -451,7 +451,7 @@ img {
 }
 .links-img-works {
   display: block;
-  transition: box-shadow var(--transform-all);
+  transition: transform 300ms linear box-shadow var(--transform-all);
 }
 .links-img-works:hover,
 .links-img-works:focus {
@@ -483,7 +483,6 @@ img {
 }
 .links-img-works:focus .text-modal {
   transform: translateY(0%);
-  transition: transform 300ms linear;
 }
 .text-modal {
   position: absolute;
