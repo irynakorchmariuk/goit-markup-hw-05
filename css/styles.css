@@ -449,15 +449,6 @@ img {
 .btn-portfolio:not(:last-child) {
   margin-right: 24px;
 }
-.links-img-works {
-  display: block;
-  transition: transform 300ms linear box-shadow var(--transform-all);
-}
-.links-img-works:hover,
-.links-img-works:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 /*================Subheadings of the second section====================*/
 .nav-types-work {
@@ -483,6 +474,16 @@ img {
 }
 .links-img-works:focus .text-modal {
   transform: translateY(0%);
+  transition: transform 300ms linear;
+}
+.links-img-works {
+  display: block;
+  transition: transform 300ms linear box-shadow var(--transform-all);
+}
+.links-img-works:hover,
+.links-img-works:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .text-modal {
   position: absolute;
