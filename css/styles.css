@@ -470,11 +470,11 @@ img {
 }
 .links-img-works:hover .text-modal {
   transform: translateY(0%);
-  transition: transform 300ms linear;
+  /* transition: transform 300ms linear; */
 }
 .links-img-works:focus .text-modal {
   transform: translateY(0%);
-  transition: transform 300ms linear;
+  /* transition: transform 300ms linear; */
 }
 .links-img-works {
   display: block;
